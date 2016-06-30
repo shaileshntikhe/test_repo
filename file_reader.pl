@@ -25,3 +25,10 @@ while(my $line = readline($reader)) {
 }
 
 println("Reading file $input_file is completed\n");
+close($reader) || do {
+  warn("Could not close file $input_file, reason: $!\n");
+  exit(1);
+}
+
+println("File closed\n");
+println("Process completed\n");
