@@ -20,7 +20,7 @@ open(my $reader, "<", $input_file) || do {
 
 println("File: $input_file is now open for reading\n");
 
-while(my $line = readline($reader)) {
+while(my $line = <$reader>)) {
   print("Current line: $line");
 }
 
