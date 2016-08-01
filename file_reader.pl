@@ -1,5 +1,6 @@
 use strict;
 use warnings;
+use diagnostics;
 
 my $input_file = {
   if(@ARGV < 1) {
