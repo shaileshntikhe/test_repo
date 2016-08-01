@@ -25,3 +25,5 @@ while(my $line = <$reader>)) {
 }
 
 println("Reading file $in_file is completed\n");
+
+println("App completed succesfully");
