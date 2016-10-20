@@ -19,3 +19,4 @@ open(my $reader, "<", $input_file) || do {
 }
 
 println("File: $input_file is now open for reading\n");
+close($file);
